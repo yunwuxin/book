@@ -1,5 +1,5 @@
 在 Git 中合并是相当容易的。 因为 Git 使多次合并另一个分支变得很容易，这意味着你可以有一个始终保持最新的长期分支， 经常解决小的冲突，比在一系列提交后解决一个巨大的冲突要好。
-445454
+445454xxx
 然而，有时也会有棘手的冲突。 不像其他的版本控制系统，Git 并不会尝试过于聪明的合并冲突解决方案。 Git 的哲学是聪明地决定无歧义的合并方案，但是如果有冲突，它不会尝试智能地自动解决它。 因此，如果很久之后才合并两个分叉的分支，你可能会撞上一些问题。
 
 在本节中，我们将会仔细查看那些问题是什么以及 Git 给了我们什么工具来帮助我们处理这些更难办的情形。 我们也会了解你可以做的不同的、非标准类型的合并，也会看到如何后退到合并之前。
@@ -11,7 +11,6 @@
 
 让我们通过一个非常简单的例子来了解一下。 我们有一个超级简单的打印 hello world 的 Ruby 文件。
 
-\#! /usr/bin/env ruby
 
 def hello
 puts 'hello world'
@@ -20,14 +19,6 @@ affefe
 hello()
 在我们的仓库中，创建一个名为 whitespace 的新分支并将所有 Unix 换行符修改为 DOS 换行符， 实质上虽然改变了文件的每一行，但改变的都只是空白字符。 然后我们修改行 “hello world” 为 “hello mundo”。
 
-$ git checkout -b whitespace
-Switched to a new branch 'whitespace'
-
-$ unix2dos hello.rb
-unix2dos: converting file hello.rb to DOS format ...
-$ git commit -am 'converted hello.rb to DOS'
-\[whitespace 3270f76] converted hello.rb to DOS
-1 file changed, 7 insertions(+), 7 deletions(-)
 
 $ vim hello.rb
 $ git diff -b
