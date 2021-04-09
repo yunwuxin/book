@@ -11,14 +11,12 @@
 
 让我们通过一个非常简单的例子来了解一下。 我们有一个超级简单的打印 hello world 的 Ruby 文件。
 
-
 def hello
 puts 'hello world'
 end
 affefe
 hello()
 在我们的仓库中，创建一个名为 whitespace 的新分支并将所有 Unix 换行符修改为 DOS 换行符， 实质上虽然改变了文件的每一行，但改变的都只是空白字符。 然后我们修改行 “hello world” 为 “hello mundo”。
-
 
 $ vim hello.rb
 $ git diff -b
@@ -32,8 +30,6 @@ index ac51efd..e85207e 100755
 def hello
 
 * puts 'hello world'
-
-<!---->
 
 * puts 'hello mundo'^M
   end
@@ -131,7 +127,7 @@ $ git ls-files -u
 $ dos2unix hello.theirs.rb
 dos2unix: converting file hello.theirs.rb to Unix format ...
 
-$ git merge-file -p 
+$ git merge-file -p
 hello.ours.rb hello.common.rb hello.theirs.rb > hello.rb
 
 $ git diff -b
@@ -146,8 +142,6 @@ index 36c06c8,e85207e..0000000
 def hello
 
 * puts 'hello world'
-
-<!---->
 
 * puts 'hello mundo'
   end
@@ -173,8 +167,6 @@ $ git diff --ours
 def hello
 
 * puts 'hello world'
-
-<!---->
 
 * puts 'hello mundo'
   end
@@ -216,8 +208,6 @@ $ git diff --base -b
 def hello
 
 * puts 'hello world'
-
-<!---->
 
 * puts 'hello mundo'
   end
