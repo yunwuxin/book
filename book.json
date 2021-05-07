@@ -1,0 +1,8 @@
+{
+    "plugins": [],
+    "pdf": {
+        "margin": {
+            "right": 31
+        }
+    }
+}
