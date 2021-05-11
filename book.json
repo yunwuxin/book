@@ -1,9 +1,4 @@
 {
     "plugins": [],
-    "pdf": {
-        "margin": {
-            "right": 31
-        }
-    },
     "title": "第一本书"
 }
