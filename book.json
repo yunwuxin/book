@@ -15,5 +15,9 @@
             ]
         }
     },
-    "theme": "mina"
+    "theme": "maxime",
+    "plugins": [
+        "upyun",
+        "tex"
+    ]
 }
