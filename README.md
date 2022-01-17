@@ -1,4 +1,4 @@
-# book
+# Initial page
 
-fefeafe
-gegex
+{% file src=".gitbook/assets/ImbaMallLog.txt" %}
+
