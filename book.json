@@ -1,0 +1,23 @@
+{
+    "title": "第一本书",
+    "pluginsConfig": {
+        "theme-default": {
+            "auto_open": true,
+            "navs": [
+                {
+                    "title": "连接",
+                    "url": "http:\/\/www.kancloud.cn"
+                },
+                {
+                    "title": "个",
+                    "url": "个.md"
+                }
+            ]
+        }
+    },
+    "theme": "maxime",
+    "plugins": [
+        "upyun",
+        "tex"
+    ]
+}
