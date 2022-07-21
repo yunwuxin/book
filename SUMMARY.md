@@ -1,3 +1,3 @@
-* [Initial page](README.md)
-* [fegg](fegg.md)
-* [gegegxx](gege/gxx.md)
+# Table of contents
+
+* [Page 1](README.md)
