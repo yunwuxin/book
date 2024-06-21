@@ -13,11 +13,15 @@
                     "url": "个.md"
                 }
             ]
+        },
+        "ai": {
+            "token": "@encrypted:U2FsdGVkX19TCyEHwX9X9ydgyuJq67060KYjWMQ67RR7dCz\/51hjnJHjQ8taV3YujQyVdLNb1Pgq8WC18K4txg=="
         }
     },
     "theme": "maxime",
     "plugins": [
         "upyun",
-        "tex"
+        "tex",
+        "ai"
     ]
 }
